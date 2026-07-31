@@ -1,0 +1,242 @@
+<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; font-family: 'Be Vietnam Pro', sans-serif; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary-container": "#f2f3ff",
+            "on-primary": "#ffffff",
+            "on-surface-variant": "#424656",
+            "on-error-container": "#93000a",
+            "surface-bright": "#f9f9ff",
+            "secondary-container": "#fdbc00",
+            "surface-container-high": "#e8e7ef",
+            "primary-fixed": "#dbe1ff",
+            "tertiary": "#9e3100",
+            "on-primary-fixed": "#00174b",
+            "surface-container-low": "#f3f3fa",
+            "on-tertiary-container": "#fff1ed",
+            "surface-white": "#FFFFFF",
+            "outline": "#737687",
+            "outline-variant": "#c2c6d8",
+            "tertiary-fixed": "#ffdbcf",
+            "surface-tint": "#EEF5FF",
+            "primary-container": "#0062fe",
+            "tertiary-container": "#c84000",
+            "inverse-on-surface": "#f0f0f8",
+            "background": "#f9f9ff",
+            "error": "#ba1a1a",
+            "text-muted": "#5F6368",
+            "on-background": "#1a1b21",
+            "surface-container": "#ededf5",
+            "on-tertiary-fixed": "#390c00",
+            "inverse-primary": "#b4c5ff",
+            "surface-dim": "#d9d9e1",
+            "surface-variant": "#e2e2e9",
+            "on-secondary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-highest": "#e2e2e9",
+            "on-secondary-container": "#6b4d00",
+            "on-surface": "#1a1b21",
+            "secondary": "#7a5900",
+            "on-secondary-fixed-variant": "#5c4200",
+            "on-tertiary": "#ffffff",
+            "surface": "#f9f9ff",
+            "on-tertiary-fixed-variant": "#832700",
+            "secondary-fixed": "#ffdea2",
+            "on-secondary-fixed": "#261900",
+            "inverse-surface": "#2e3036",
+            "on-primary-fixed-variant": "#003ea7",
+            "primary-fixed-dim": "#b4c5ff",
+            "error-container": "#ffdad6",
+            "on-error": "#ffffff",
+            "primary": "#004cca",
+            "tertiary-fixed-dim": "#ffb59c",
+            "secondary-fixed-dim": "#fdbc00",
+            "brand-primary": "#0062FE"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "1rem",
+            "2xl": "1.5rem",
+            "3xl": "2.5rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "section-gap": "100px",
+            "gutter": "32px",
+            "container-padding": "32px",
+            "base": "8px"
+          },
+          "fontFamily": {
+            "headline-lg-mobile": ["Be Vietnam Pro"],
+            "body-md": ["Be Vietnam Pro"],
+            "title-md": ["Be Vietnam Pro"],
+            "label-md": ["Be Vietnam Pro"],
+            "label-sm": ["Be Vietnam Pro"],
+            "headline-lg": ["Be Vietnam Pro"],
+            "body-lg": ["Be Vietnam Pro"],
+            "display-lg": ["Be Vietnam Pro"]
+          },
+          "fontSize": {
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "title-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+        @keyframes scroll {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+      </style></head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col">
+<header class="fixed top-0 w-full z-50 bg-surface-white/80 backdrop-blur-xl border-b border-surface-container-high">
+<div class="h-20 max-w-[1200px] mx-auto px-container-padding flex items-center justify-between">
+<div class="flex items-center gap-base">
+<div class="w-10 h-10 overflow-hidden rounded-lg"><img alt="Attention Matters Logo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXMNL2pXyDYE_6MIutvnH96ZiyHWvZ4DpUhLYa1A5w1ETEzk8uX2GjmpJnE98DHhKUU3WHBgRgFRfUPvfyNJyLqo8nFcOXb3cYl_mJE3tGkKrLLjqr1OHy9NnxBhPq3Fuzdc1dCPcrUU0N7ILT7PkdSDlIcqZBjpUlyS55aaDW75vgvwe0U-dyBH8H0GewuW8s35HXTY1ZX8T_yAd0_5rijeMaYgAyJnjy5kMjdI63f56jcACUB4XCJtkwct4fbIuVOw"></div>
+<span class="font-headline-lg text-title-md tracking-tight text-on-surface">Attention Matters</span>
+</div>
+</div>
+</header>
+<main class="flex-1 pt-20">
+<div class="flex flex-col w-full overflow-hidden">
+<!-- Soft Background Decor -->
+<div class="fixed inset-0 pointer-events-none z-0">
+<div class="absolute top-[-15%] right-[-10%] w-[800px] h-[800px] rounded-full bg-brand-primary/5 blur-[150px]"></div>
+<div class="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] rounded-full bg-secondary-container/10 blur-[120px]"></div>
+</div>
+<!-- Main Hero Content -->
+<section class="relative z-10 min-h-[calc(100vh-80px)] flex flex-col items-center justify-center px-container-padding py-section-gap">
+<div class="relative w-full max-w-[1100px] group">
+<!-- Floating Badge -->
+<div class="absolute -top-5 left-8 z-20 px-6 py-2.5 bg-secondary-container text-on-secondary-container rounded-full shadow-lg shadow-secondary-container/20 transform -rotate-1 group-hover:rotate-0 transition-transform duration-500">
+<span class="font-label-md text-label-md flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+              COMING SOON</span>
+</div>
+<!-- Hero Card -->
+<div class="bg-surface-white rounded-3xl p-10 md:p-16 shadow-[0_40px_100px_-20px_rgba(0,98,254,0.08)] border border-surface-container overflow-hidden">
+<div class="relative z-10 flex flex-col md:flex-row gap-12 lg:gap-20 items-center">
+<!-- Visual Side -->
+<div class="w-full md:w-5/12 flex flex-col gap-gutter">
+<div class="aspect-[4/5] w-full rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.01] transition-transform duration-700">
+<img alt="A high-end conceptual photograph representing 'visibility' and 'attention' for a local business. A single, diverse small business owner standing in a bustling urban community environment, illuminated by a warm, golden beam of light." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA0PAV3D8Zx1i9Ip0Mp6OjL3iHpWjPuPG2-MMYgwCTKlkw4ZC5lfE3prPeE76zecgJASvgjZUZu9Dp4X-6cEtnQtGKrxvq1_xy6ywWwHw7E95Csn7KsfTlPmFGaFbHsPiWj_NrnUDcuRRQFEgRBacJMdjHInTEyxiAoKKDzv264MZ6xDPgH1f5SL3pibPbEmQc95LhP3jLnKZ4U4Dd5Y2xr7D9kzxqI3AtNagRM3I27E5oXdbQ60gM">
+</div>
+<div class="flex items-center gap-4 px-2">
+<div class="h-0.5 w-10 bg-brand-primary/40 rounded-full"></div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-[0.15em]">Built for BUSINESSES</span>
+</div>
+</div>
+<!-- Text Side -->
+<div class="w-full md:w-7/12">
+<h1 class="font-display-lg text-display-lg text-on-surface mb-8 leading-[1.1] tracking-tight">Command the spotlight your local business <span class="text-brand-primary">deserves.</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 leading-relaxed max-w-[520px]">We bridge the gap between cutting-edge AI visibility and authentic local excellence. Our platform ensures your business isn't just seen, but remembered, by automating the complex path to digital prominence.</p>
+<!-- Signup Form -->
+<form class="relative max-w-lg" id="waitlist-form">
+<a href="https://stan.store/attentionmatters" class="bg-brand-primary text-on-primary font-title-md px-12 py-6 rounded-2xl shadow-lg shadow-brand-primary/20 hover:shadow-brand-primary/40 hover:-translate-y-0.5 active:translate-y-0 transition-all flex items-center justify-center gap-4 whitespace-nowrap w-full sm:w-auto text-title-md">Find out can AI find your business?</a>
+<p class="absolute -bottom-10 left-5 font-label-sm text-label-sm text-brand-primary font-medium opacity-0 transition-opacity" id="form-feedback">
+                    Welcome! We'll reach out soon with something special.
+                  </p>
+</form>
+</div>
+</div>
+</div>
+<!-- Decorative Soft Shapes -->
+<div class="absolute -bottom-12 -right-12 w-48 h-48 bg-secondary-container/10 rounded-full blur-[80px] -z-10"></div>
+<div class="absolute top-1/2 -left-24 w-60 h-60 bg-brand-primary/5 rounded-full blur-[100px] -z-10"></div>
+</div>
+</section>
+<!-- Feature Row -->
+<section class="max-w-[1200px] mx-auto px-container-padding pb-section-gap grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-surface-white/60 backdrop-blur-sm p-10 rounded-2xl border border-surface-container-low hover:border-brand-primary/20 transition-all group">
+<div class="w-14 h-14 bg-surface-container-low rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-primary/5 transition-colors">
+<span class="material-symbols-outlined text-brand-primary text-[32px]">favorite</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-3">Unmissable</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Helping your business get noticed on Google, social media, and AI search results.</p>
+</div>
+<div class="bg-surface-white/60 backdrop-blur-sm p-10 rounded-2xl border border-surface-container-low hover:border-brand-primary/20 transition-all group"><div class="w-14 h-14 bg-surface-container-low rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-primary/5 transition-colors"><span class="material-symbols-outlined text-secondary-container text-[32px]">center_focus_strong</span></div><h3 class="font-title-md text-title-md text-on-surface mb-3">Strategic Focus</h3><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Automate the tedious work so you can pay attention to what actually grows your business.</p></div>
+<div class="bg-surface-white/60 backdrop-blur-sm p-10 rounded-2xl border border-surface-container-low hover:border-brand-primary/20 transition-all group"><div class="w-14 h-14 bg-surface-container-low rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-primary/5 transition-colors"><span class="material-symbols-outlined text-brand-primary text-[32px]">trending_up</span></div><h3 class="font-title-md text-title-md text-on-surface mb-3">AI-Driven Growth</h3><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Smart automation and lead generation tailored specifically for small business owners.</p></div>
+</section>
+<!-- Subtle Marquee -->
+<div class="w-full overflow-hidden whitespace-nowrap opacity-10 pb-16 pointer-events-none select-none">
+<div class="flex animate-[scroll_80s_linear_infinite] gap-16 font-display-lg text-headline-lg uppercase tracking-[0.25em] text-outline">
+<span class="">Local Excellence</span>
+<span class="">•</span>
+<span class="">Community Focus</span>
+<span class="">•</span>
+<span class="">Digital Harmony</span>
+<span class="">•</span>
+<span class="">Brand Luster</span>
+<span class="">•</span>
+<span class="">Authentic Growth</span>
+<span class="">•</span>
+<span class="">Local Excellence</span>
+<span class="">•</span>
+<span class="">Community Focus</span>
+</div>
+</div>
+</div>
+<script>
+      document.getElementById('waitlist-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const feedback = document.getElementById('form-feedback');
+        const button = e.target.querySelector('button');
+        
+        button.innerHTML = '<span class="material-symbols-outlined animate-spin">progress_activity</span>';
+        button.disabled = true;
+        
+        setTimeout(() => {
+          feedback.classList.remove('opacity-0');
+          button.innerHTML = '<span class="material-symbols-outlined">check_circle</span> All Set!';
+          button.classList.replace('bg-brand-primary', 'bg-secondary');
+          e.target.reset();
+        }, 1500);
+      });
+    </script>
+</main>
+<footer class="w-full bg-surface-container-lowest py-20 border-t border-surface-container">
+<div class="max-w-[1200px] mx-auto px-container-padding text-center">
+<div class="flex justify-center gap-10 mb-10">
+<a class="text-outline hover:text-brand-primary transition-colors" href="#"><span class="material-symbols-outlined text-[24px]">share</span></a>
+<a class="text-outline hover:text-brand-primary transition-colors" href="#"><span class="material-symbols-outlined text-[24px]">mail</span></a>
+<div class="flex items-center gap-2 text-outline font-label-md"><span class="material-symbols-outlined text-[20px]">photo_camera</span><span class="">@attentionmatters.ai</span></div></div>
+<p class="font-label-md text-label-md text-on-surface-variant mb-3">© 2026 Attention Matters. Empowering local businesses everywhere.</p>
+<p class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Crafted with care for local business owners.</p>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+</body></html>
