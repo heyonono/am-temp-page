@@ -105,7 +105,7 @@ export default function SchoolCalendarPrompt() {
             Made by <a href="https://www.instagram.com/irenebuildsai/">@IreneBuildsAI</a>: an AI
             engineer and mom putting AI to work on everyday family admin.
           </p>
-          <Link className="quiet-link" href="/">About Attention Matters</Link>
+          <Link className="quiet-link" href="/prompts">← All prompts</Link>
         </aside>
       </article>
     </main>
