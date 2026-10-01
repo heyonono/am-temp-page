@@ -186,6 +186,10 @@ export default function Home() {
               legible, and build only what will be useful. My experience includes work with global
               technology companies such as Samsung, Nokia, and TELUS.
             </p>
+            <p>
+              I share practical AI experiments as{" "}
+              <a className="inline-link" href="https://www.instagram.com/irenebuildsai/">@IreneBuildsAI</a> on Instagram.
+            </p>
           </div>
         </div>
       </section>
@@ -213,6 +217,7 @@ export default function Home() {
         <p>Practical AI, automation, and digital systems.</p>
         <div className="footer-links">
           <span>© 2026 Attention Matters</span>
+          <a href="https://www.instagram.com/irenebuildsai/">Instagram · @IreneBuildsAI</a>
           <a href="#contact">Get in touch</a>
         </div>
       </footer>

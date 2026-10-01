@@ -350,6 +350,8 @@ p { margin-top: 0; }
 .about-copy h2 { max-width: 860px; margin-bottom: 0; }
 .about-copy p { max-width: 720px; color: var(--muted); font-size: 17px; }
 .about-copy .about-lead { color: var(--ink-soft); font-size: 20px; }
+.inline-link { color: var(--violet); font-weight: 650; border-bottom: 1px solid currentColor; }
+.inline-link:hover { color: var(--cyan); }
 
 .contact {
   padding-block: var(--section-space);
