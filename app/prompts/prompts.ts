@@ -9,6 +9,14 @@ export type PromptEntry = {
 
 export const PROMPTS: PromptEntry[] = [
   {
+    slug: "thinking-coach",
+    title: "Make ChatGPT a thinking coach",
+    summary:
+      "Five prompts that make AI ask, wait, hint, adapt and bring difficult ideas back—without doing the learning for your child.",
+    tool: "Use with ChatGPT Study mode",
+    added: "2026-10-04",
+  },
+  {
     slug: "school-calendar",
     title: "Put your school's calendar in yours",
     summary:
